@@ -39,8 +39,9 @@
   text-decoration: none;
   color: #3a1762;
 }
+
 .hero-section {
-  padding: 0 8.4rem;
+  padding: 8.4rem;
 }
 
 .hero-text-box {
@@ -65,4 +66,35 @@
 
 .hero-img {
   width: 100%;
+}
+
+.courasel-section {
+  padding: 8.4rem 0;
+}
+
+.courasel-1 {
+  padding-bottom: 4.8rem;
+}
+
+.card {
+  display: flex;
+  gap: 2.4rem;
+  flex-direction: column;
+  padding: 2rem;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.06);
+}
+
+.card-description {
+  color: #3a1762;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.couracel-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4.8rem;
 }

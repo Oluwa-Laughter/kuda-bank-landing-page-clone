@@ -15,17 +15,21 @@ body {
 }
 
 .container {
-  max-width: 130rem;
+  max-width: 120rem;
   margin: 0 auto;
 }
 
 .grid {
   display: grid;
-  padding: 7.4rem;
+  gap: 4.8rem;
 }
 
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .btn:link,
