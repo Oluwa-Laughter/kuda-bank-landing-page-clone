@@ -43,10 +43,6 @@
 }
 
 /* Hero section */
-.hero-section {
-  padding: 8.4rem 0;
-}
-
 .hero-text-box {
   display: flex;
   flex-direction: column;
@@ -72,10 +68,6 @@
 }
 
 /* Card section */
-.card-section {
-  padding: 8.4rem 0;
-}
-
 .card-1 {
   padding-bottom: 4.8rem;
 }
@@ -104,15 +96,12 @@
 }
 
 /* How It Works Section */
-.hiw-section {
-  padding: 8.4rem 0;
-}
-
 .hiw-container {
   justify-content: center;
   align-items: center;
   margin-bottom: 8.4rem;
 }
+
 .hiw-subheading {
   letter-spacing: -0.8px;
   line-height: 1.5;
@@ -141,4 +130,23 @@
 
 .hiw-img {
   width: 100%;
+}
+
+.hiw-section .hiw-container:last-child {
+  margin-bottom: 0;
+}
+
+/* Testimonials section */
+.testimonials-section {
+  padding-top: 0;
+}
+
+.testimonial-header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+
+.testimonial-text-container {
+  display: flex;
+  gap: 6.4;
 }
