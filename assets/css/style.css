@@ -53,7 +53,7 @@
 
 .hero-text {
   color: #333;
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 1;
   letter-spacing: 0.5px;
 }
@@ -102,10 +102,15 @@
   margin-bottom: 8.4rem;
 }
 
+.hiw-text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 3.6rem;
+}
+
 .hiw-subheading {
   letter-spacing: -0.8px;
   line-height: 1.5;
-  margin-bottom: 3.2rem;
 }
 
 .hiw-text {
@@ -113,7 +118,6 @@
   font-weight: 600;
   color: #333;
   line-height: 1.5;
-  margin-bottom: 3.2rem;
 }
 
 .hiw-link:link,
@@ -139,6 +143,7 @@
 /* Testimonials section */
 .testimonials-section {
   padding-top: 0;
+  margin: 0 8.4rem;
 }
 
 .testimonial-header {
@@ -147,6 +152,34 @@
 }
 
 .testimonial-text-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3.2rem;
+  align-items: center;
+}
+
+.testimonial {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #333;
+  padding: 1.6rem;
+  letter-spacing: -0.5px;
+  line-height: 1.5;
+  border-radius: 10px;
+  box-shadow: 0 4px 13px rgba(0, 0, 0, 0.05);
   display: flex;
-  gap: 6.4;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.author {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+}
+
+.author > img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
 }
