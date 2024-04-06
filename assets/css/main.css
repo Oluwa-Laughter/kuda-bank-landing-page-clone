@@ -12,6 +12,7 @@ body {
   font-family: "Muli", sans-serif;
   line-height: 1;
   font-weight: 400;
+  scroll-behavior: smooth;
 }
 
 section {
@@ -34,6 +35,18 @@ section {
 
 .grid--3-cols {
   grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.grid--6-cols {
+  grid-template-columns: repeat(6, 1fr);
 }
 
 .btn:link,

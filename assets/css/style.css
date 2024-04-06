@@ -1,5 +1,4 @@
 /* Header and Navigation */
-
 .header {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -182,4 +181,69 @@
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
+}
+
+/* Galleries section */
+.galleries-section {
+  padding: 0 8.4rem;
+  margin-bottom: 8.4rem;
+}
+.galleries {
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery {
+  width: 50%;
+  align-self: center;
+  justify-self: center;
+  filter: grayscale(100%);
+}
+
+/* Partners section */
+.partners-section {
+  background-color: #fbfbfb;
+}
+
+.partner-header {
+  text-align: center;
+  margin-bottom: 5.6rem;
+}
+
+.partner-logos {
+  justify-content: center;
+  align-items: center;
+}
+.partner-logo {
+  width: auto;
+}
+
+/* Kuda standard */
+.standard-section {
+}
+
+.standard-header {
+  text-align: center;
+  margin-bottom: 6.4rem;
+}
+
+.standard {
+  display: flex;
+  justify-content: space-around;
+}
+
+.plans ul {
+  list-style: none;
+}
+
+.plans ul > li {
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding: 1.6rem;
+  color: #333;
+}
+
+.plans ul li:first-child {
+  color: #40196d;
+  margin-bottom: 2rem;
 }
