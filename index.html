@@ -11,25 +11,38 @@
       rel="stylesheet"
     />
     <title>Kuda Clone | The Money app</title>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </head>
   <body>
     <header class="header">
       <a href="#" class="nav-bar_logo">
         <img src="assets/img/kuda-logo.png" alt="kuda-logo" class="logo" />
       </a>
-      <ul class="nav-bar-links">
-        <li></li>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="nav-bar-link" href="#">Personal</a></li>
+          <li><a class="nav-bar-link" href="#">Business</a></li>
+          <li><a class="nav-bar-link" href="#">Company</a></li>
+          <li><a class="nav-bar-link" href="#">Help</a></li>
 
-        <li><a class="nav-bar-link" href="#">Personal</a></li>
-        <li><a class="nav-bar-link" href="#">Business</a></li>
-        <li><a class="nav-bar-link" href="#">Company</a></li>
-        <li><a class="nav-bar-link" href="#">Help</a></li>
-      </ul>
+          <li><a href="#" class="sign-in-btn">Sign in</a></li>
+          <li><a href="#" class="btn">Join Kuda</a></li>
+        </ul>
+      </nav>
 
-      <div class="nav-bar-btns">
-        <a href="#" class="sign-in-btn">Sign in</a>
-        <a href="#" class="btn">Join Kuda</a>
-      </div>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
     <main>
       <section class="hero-section">
@@ -472,7 +485,7 @@
             </p>
           </div>
         </div>
-        <div class="card-2">
+        <div class="card-2 grid grid--2-cols">
           <div class="card">
             <div class="icon">
               <svg width="37" height="38" viewBox="0 0 37 38" fill="none">
@@ -514,8 +527,8 @@
           </div>
         </div>
       </section>
-      <section class="hiw-section">
-        <div class="container grid grid--2-cols hiw-container">
+      <section class="hiw-section container">
+        <div class="grid grid--2-cols">
           <div class="hiw-text-box">
             <h2 class="secondary-header hiw-subheading">
               <span
@@ -540,7 +553,7 @@
           />
         </div>
 
-        <div class="container grid grid--2-cols hiw-container">
+        <div class="grid grid--2-cols">
           <img
             src="assets/img/kuda-how-it-works-2.png"
             alt="a-screen-display-how-to-spend-and-save"
@@ -558,7 +571,7 @@
           </div>
         </div>
 
-        <div class="container grid grid--2-cols hiw-container">
+        <div class="grid grid--2-cols">
           <div class="hiw-text-box">
             <h2 class="secondary-header hiw-subheading">
               Save money as you spend it, seriously.
@@ -579,7 +592,7 @@
           />
         </div>
 
-        <div class="container grid grid--2-cols hiw-container">
+        <div class="grid grid--2-cols">
           <img
             src="assets/img/kuda-how-it-works-4.png"
             alt="kuda-atm-card"
@@ -599,7 +612,7 @@
           </div>
         </div>
 
-        <div class="container grid grid--2-cols hiw-container">
+        <div class="grid grid--2-cols">
           <div class="hiw-text-box">
             <h2 class="secondary-header hiw-subheading">
               We’re always happy to help you.
@@ -621,7 +634,7 @@
           />
         </div>
 
-        <div class="container grid grid--2-cols hiw-container">
+        <div class="grid grid--2-cols">
           <img
             src="assets/img/kuda-how-it-works-6.png"
             alt="coin-put-in-a-glass-bottle"
@@ -843,7 +856,6 @@
 
     <footer>
       <div class="container">
-        <div class="footer-nav-bar"></div>
         <div class="kuda-contact grid grid--5-cols">
           <div class="contact-address-details">
             <p class="contact">Contact</p>
