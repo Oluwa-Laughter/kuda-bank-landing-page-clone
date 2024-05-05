@@ -5,8 +5,6 @@
   align-items: center;
   justify-content: space-between;
   background-color: #fff;
-  box-shadow: 0 4px 13px rgba(0, 0, 0, 0.05);
-
   /* Header to be sticky */
   height: 7rem;
   padding: 0 8.4rem;
@@ -23,7 +21,12 @@
   gap: 4.8rem;
   list-style: none;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+}
+
+.main-nav-list > li .btn {
+  display: block;
+  margin-left: 9.6rem;
 }
 
 .nav-bar-link:link,
@@ -32,14 +35,6 @@
   color: #3a1762;
   text-decoration: none;
   font-size: 1.6rem;
-  cursor: pointer;
-}
-
-.sign-in-btn:link,
-.sign-in-btn:visited {
-  font-size: 1.6rem;
-  text-decoration: none;
-  color: #3a1762;
   cursor: pointer;
 }
 
@@ -63,12 +58,24 @@
 }
 
 /* Hero section */
-
 .hero-flex {
   display: flex;
   gap: 6.4rem;
   align-items: center;
 }
+
+/* Sticky Navigation */
+.sticky .header {
+  position: fixed;
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+  top: 0;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
 .hero-text-box {
   display: flex;
   flex-direction: column;
@@ -93,6 +100,7 @@
 }
 
 /* Card section */
+
 .card-1 {
   padding-bottom: 4.8rem;
 }
@@ -246,8 +254,6 @@
 }
 
 /* Kuda standard */
-.standard-section {
-}
 
 .standard-header {
   text-align: center;

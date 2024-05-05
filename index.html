@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Learning FrontEnd developement, For Building Projects purpose Only (Not to be taken as an official Site) "
+    />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/mediaqueries.css" />
@@ -10,7 +15,8 @@
       href="https://fonts.googleapis.com/css?family=Muli:400,600,700,800,900&display=swap"
       rel="stylesheet"
     />
-    <title>Kuda Clone | The Money app</title>
+
+    <title>Kuda Website Clone | The Money app For Africans</title>
 
     <script
       type="module"
@@ -21,6 +27,8 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+
+    <script defer src="js/script.js"></script>
   </head>
   <body>
     <header class="header">
@@ -29,12 +37,11 @@
       </a>
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="nav-bar-link" href="#">Personal</a></li>
-          <li><a class="nav-bar-link" href="#">Business</a></li>
-          <li><a class="nav-bar-link" href="#">Company</a></li>
-          <li><a class="nav-bar-link" href="#">Help</a></li>
-
-          <li><a href="#" class="sign-in-btn">Sign in</a></li>
+          <li><a class="nav-bar-link" href="#how-it-works">Personal</a></li>
+          <li><a class="nav-bar-link" href="#standards">Business</a></li>
+          <li><a class="nav-bar-link" href="#gallery">Company</a></li>
+          <li><a class="nav-bar-link" href="#footer">Help</a></li>
+          <li><a href="#" class="nav-bar-link">Sign in</a></li>
           <li><a href="#" class="btn">Join Kuda</a></li>
         </ul>
       </nav>
@@ -527,7 +534,7 @@
           </div>
         </div>
       </section>
-      <section class="hiw-section container">
+      <section class="hiw-section container" id="how-it-works">
         <div class="grid grid--2-cols">
           <div class="hiw-text-box">
             <h2 class="secondary-header hiw-subheading">
@@ -654,7 +661,7 @@
         </div>
       </section>
 
-      <section class="testimonials-section">
+      <section class="testimonials-section" id="testimonials">
         <div class="testimonials">
           <h2 class="secondary-header testimonial-header">
             Don’t just take our word for it
@@ -722,7 +729,7 @@
         </div>
       </section>
 
-      <section class="galleries-section">
+      <section class="galleries-section" id="gallery">
         <div class="galleries grid grid--6-cols">
           <img
             src="assets/img/TechCrunch_logo.png"
@@ -753,7 +760,7 @@
         </div>
       </section>
 
-      <section class="partners-section">
+      <section class="partners-section" id="partners">
         <h2 class="secondary-header partner-header">Our Partners</h2>
         <div class="container grid grid--5-cols partner-logos">
           <img
@@ -781,7 +788,7 @@
       </section>
 
       <!-- How kuda is different from others  -->
-      <section class="standard-section">
+      <section class="standard-section" id="standards">
         <h2 class="secondary-header standard-header">
           Choose the freedom you need.
         </h2>
@@ -837,7 +844,7 @@
         </div>
       </section>
 
-      <section class="cta-section">
+      <section class="cta-section" id="cta">
         <div class="container kuda-cta">
           <div>
             <h1 class="primary-header cta-header">
@@ -846,7 +853,9 @@
             <p class="cta-text">
               Save, spend, send and invest money across borders
             </p>
-            <a href="#" class="btn">Join Kuda</a>
+            <a href="https://kuda.com/" target="”_blank”" class="btn"
+              >Join Kuda</a
+            >
           </div>
 
           <img src="assets/img/kuda-hero-img.png" alt="" class="cta-img" />
@@ -854,7 +863,7 @@
       </section>
     </main>
 
-    <footer>
+    <footer id="footer">
       <div class="container">
         <div class="kuda-contact grid grid--5-cols">
           <div class="contact-address-details">
@@ -986,6 +995,15 @@
             duly registered with The Financial Transactions and Reports Analysis
             Centre of Canada (FINTRAC) as a money service business, bearing
             registration number M23163015.
+          </p>
+        </div>
+        <div class="project-by">
+          <p>
+            Built By
+            <a target="_blank" href="https://github.com/Oluwa-Laughter"
+              >Isaac Makinde</a
+            >
+            &copy; 2024
           </p>
         </div>
       </div>
