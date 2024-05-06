@@ -7,7 +7,7 @@
   background-color: #fff;
   /* Header to be sticky */
   height: 7rem;
-  padding: 0 8.4rem;
+  padding: 0 8.6rem;
 
   position: relative;
 }
@@ -57,13 +57,6 @@
   display: none;
 }
 
-/* Hero section */
-.hero-flex {
-  display: flex;
-  gap: 6.4rem;
-  align-items: center;
-}
-
 /* Sticky Navigation */
 .sticky .header {
   position: fixed;
@@ -71,9 +64,17 @@
   padding-top: 0;
   padding-bottom: 0;
   top: 0;
+  height: 7rem;
   z-index: 999;
   background-color: rgba(255, 255, 255, 0.85);
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
+/* Hero section */
+.hero-flex {
+  display: flex;
+  gap: 6.4rem;
+  align-items: center;
 }
 
 .hero-text-box {
@@ -162,7 +163,6 @@
 
 .hiw-img {
   width: 100%;
-  filter: blur(1.6rem);
 }
 
 /* Testimonials section */

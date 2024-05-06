@@ -24,6 +24,10 @@ section {
   padding: 8.4rem 0;
 }
 
+.section {
+  transition: transform 1s, opacity 1s;
+}
+
 .section--hidden {
   opacity: 0;
   transform: translateY(8rem);
@@ -84,7 +88,7 @@ section {
 }
 
 .project-by {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 700;
   color: #40196d;
   text-align: center;

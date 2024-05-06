@@ -6,6 +6,7 @@ const btnScrollToCta = document.querySelector(".btn");
 const cta = document.getElementById("cta");
 const mainNavLinks = document.querySelector(".main-nav-list");
 const heroSection = document.querySelector(".hero-section");
+const allSections = document.querySelectorAll(".section");
 
 // Navigation Menu
 const btnNavMenu = function (e) {
@@ -22,19 +23,6 @@ btnScrollToCta.addEventListener("click", function (e) {
   });
 });
 
-// Page Navigation
-mainNavLinks.addEventListener("click", function (e) {
-  e.preventDefault();
-
-  console.log(e.target);
-
-  if (e.target.classList.contains("nav-bar-link")) {
-    const id = e.target.getAttribute("href");
-
-    document.querySelector(id).scrollIntoView({ behavior: "smooth" });
-  }
-});
-
 // Sticky Navigation
 const headerHeight = header.getBoundingClientRect().height;
 const stickyNav = function (entries) {
@@ -49,6 +37,37 @@ const observer = new IntersectionObserver(stickyNav, {
   rootMargin: `-${headerHeight}px`,
 });
 observer.observe(heroSection);
+
+// Page Navigation
+mainNavLinks.addEventListener("click", function (e) {
+  e.preventDefault();
+
+  if (e.target.classList.contains("nav-bar-link")) {
+    const id = e.target.getAttribute("href");
+
+    document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+    header.classList.remove("nav-open");
+  }
+});
+
+//////////////////////////
+//Revealing Sections
+const revealSection = function (entries, observer) {
+  const [entry] = entries;
+
+  entry.target.classList.remove("section--hidden");
+  observer.unobserve(entry.target);
+};
+
+const sectionObserver = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0,
+});
+
+allSections.forEach((section) => {
+  sectionObserver.observe(section);
+  // section.classList.add("section--hidden");
+});
 
 // Scroll to top
 // const btnScrollToTop = document.querySelector(".scroll-to-top");
