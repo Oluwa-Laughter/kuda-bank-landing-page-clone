@@ -8,9 +8,22 @@
   background-color: #fff;
   /* Header to be sticky */
   padding: 0 8.6rem;
-  height: 7rem;
-
+  height: 8rem;
   position: relative;
+}
+
+/* Sticky Navigation */
+.sticky .header {
+  position: fixed;
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+  top: 0;
+  bottom: 0;
+  height: 7rem;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
 }
 
 .logo {
@@ -54,32 +67,18 @@
   display: none;
 }
 
-/* Sticky Navigation */
-.sticky .header {
-  position: fixed;
-  width: 100%;
-  padding-top: 0;
-  padding-bottom: 0;
-  top: 0;
-  bottom: 0;
-  height: 6.8rem;
-  z-index: 999;
-  background-color: rgba(255, 255, 255, 0.85);
-  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
-}
-
 /* Hero section */
 .hero-flex {
   display: flex;
   gap: 6.4rem;
   align-items: center;
-  max-width: 130rem;
+  max-width: 100%;
 }
 
 .hero-text-box {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
+  align-items: center;
   gap: 3.6rem;
 }
 
@@ -114,7 +113,7 @@
 }
 
 .card:hover {
-  transform: translateY(-1rem);
+  transform: translateY(1rem);
 }
 
 .card-description {

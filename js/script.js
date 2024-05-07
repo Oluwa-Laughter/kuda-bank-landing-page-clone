@@ -9,6 +9,7 @@ const mainNavLinks = document.querySelector(".main-nav-list");
 const heroSection = document.querySelector(".hero-section");
 const allSections = document.querySelectorAll(".section");
 
+// Current Year
 const currentYear = new Date().getFullYear();
 yearEL.textContent = currentYear;
 
@@ -49,18 +50,18 @@ const stickyNav = function (entries) {
   if (!entry.isIntersecting) document.body.classList.add("sticky");
   else document.body.classList.remove("sticky");
 };
-const observer = new IntersectionObserver(stickyNav, {
+const stickyObserver = new IntersectionObserver(stickyNav, {
   root: null,
-  threshold: 0,
-  rootMargin: `-${headerHeight}px`,
+  threshold: 0.15,
+  rootMargin: `${headerHeight}px`,
 });
-observer.observe(heroSection);
+
+stickyObserver.observe(heroSection);
 
 //////////////////////////
 //Revealing Sections
 const revealSection = function (entries, observer) {
   const [entry] = entries;
-
   if (!entry.isIntersecting) return;
 
   entry.target.classList.remove("section--hidden");
@@ -74,7 +75,7 @@ const sectionObserver = new IntersectionObserver(revealSection, {
 
 allSections.forEach((section) => {
   sectionObserver.observe(section);
-  // section.classList.add("section--hidden");
+  section.classList.add("section--hidden");
 });
 
 // Scroll to top
