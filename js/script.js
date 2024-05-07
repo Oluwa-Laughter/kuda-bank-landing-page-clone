@@ -17,6 +17,7 @@ const btnNavMenu = function (e) {
   e.preventDefault();
   header.classList.toggle("nav-open");
 };
+
 btnMobileNav.addEventListener("click", btnNavMenu);
 
 // Scroll to CTA
@@ -27,6 +28,17 @@ btn.addEventListener("click", function (e) {
     behavior: "smooth",
   });
   header.classList.remove("nav-open");
+});
+
+// Page Navigation
+mainNavLinks.addEventListener("click", function (e) {
+  e.preventDefault();
+  if (e.target.classList.contains("nav-bar-link")) {
+    const id = e.target.getAttribute("href");
+
+    document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+    header.classList.remove("nav-open");
+  }
 });
 
 // Sticky Navigation
@@ -44,21 +56,12 @@ const observer = new IntersectionObserver(stickyNav, {
 });
 observer.observe(heroSection);
 
-// Page Navigation
-mainNavLinks.addEventListener("click", function (e) {
-  e.preventDefault();
-  if (e.target.classList.contains("nav-bar-link")) {
-    const id = e.target.getAttribute("href");
-
-    document.querySelector(id).scrollIntoView({ behavior: "smooth" });
-    header.classList.remove("nav-open");
-  }
-});
-
 //////////////////////////
 //Revealing Sections
 const revealSection = function (entries, observer) {
   const [entry] = entries;
+
+  if (!entry.isIntersecting) return;
 
   entry.target.classList.remove("section--hidden");
   observer.unobserve(entry.target);

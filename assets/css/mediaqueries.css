@@ -93,7 +93,7 @@
     justify-content: center;
     align-items: center;
     transform: translateX(100%);
-    transition: all 0.5s ease-in;
+    transition: all 1s ease-in;
     backdrop-filter: blur(2rem);
     opacity: 0;
 
