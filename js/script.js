@@ -1,12 +1,16 @@
 "use strict";
 
+const yearEL = document.getElementById("year");
 const btnMobileNav = document.querySelector(".btn-mobile-nav");
 const header = document.querySelector(".header");
-const btnScrollToCta = document.querySelector(".btn");
-const cta = document.getElementById("cta");
+const btn = document.querySelector(".btn");
+const cta = document.querySelector(".cta-section");
 const mainNavLinks = document.querySelector(".main-nav-list");
 const heroSection = document.querySelector(".hero-section");
 const allSections = document.querySelectorAll(".section");
+
+const currentYear = new Date().getFullYear();
+yearEL.textContent = currentYear;
 
 // Navigation Menu
 const btnNavMenu = function (e) {
@@ -16,11 +20,13 @@ const btnNavMenu = function (e) {
 btnMobileNav.addEventListener("click", btnNavMenu);
 
 // Scroll to CTA
-btnScrollToCta.addEventListener("click", function (e) {
+btn.addEventListener("click", function (e) {
   e.target.getBoundingClientRect();
+
   cta.scrollIntoView({
     behavior: "smooth",
   });
+  header.classList.remove("nav-open");
 });
 
 // Sticky Navigation
@@ -41,7 +47,6 @@ observer.observe(heroSection);
 // Page Navigation
 mainNavLinks.addEventListener("click", function (e) {
   e.preventDefault();
-
   if (e.target.classList.contains("nav-bar-link")) {
     const id = e.target.getAttribute("href");
 

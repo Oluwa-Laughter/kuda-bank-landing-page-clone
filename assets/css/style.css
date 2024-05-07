@@ -4,11 +4,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 7.2rem;
   background-color: #fff;
   /* Header to be sticky */
+  padding: 0 8.6rem;
   height: 7rem;
-  padding: 0 8.6rem;
-  padding: 0 8.6rem;
 
   position: relative;
 }
@@ -19,15 +19,11 @@
 
 .main-nav-list {
   display: flex;
+  justify-content: space-between;
+
   gap: 4.8rem;
   list-style: none;
   align-items: center;
-  justify-content: space-around;
-}
-
-.main-nav-list > li .btn {
-  display: block;
-  margin-left: 9.6rem;
 }
 
 .nav-bar-link:link,
@@ -65,7 +61,8 @@
   padding-top: 0;
   padding-bottom: 0;
   top: 0;
-  height: 7rem;
+  bottom: 0;
+  height: 6.8rem;
   z-index: 999;
   background-color: rgba(255, 255, 255, 0.85);
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
@@ -76,6 +73,7 @@
   display: flex;
   gap: 6.4rem;
   align-items: center;
+  max-width: 130rem;
 }
 
 .hero-text-box {
@@ -104,7 +102,7 @@
 /* Card section */
 
 .card-1 {
-  padding-bottom: 4.8rem;
+  margin-bottom: 4.8rem;
 }
 
 .card {
