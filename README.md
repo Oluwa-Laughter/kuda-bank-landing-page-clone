@@ -3,7 +3,7 @@ This is a landing page clone to the Official [Kuda Website](https://kuda.com/en-
 ### Links
 
 - Solution URL: [Solution](https://github.com/Oluwa-Laughter/kuda-bank-landing-page-clone)
-- Live Site URL: [Easybank](https://easybank-landing-page-by-isaac.netlify.app/)
+- Live Site URL: [Kuda-Landing-page-clone](https://kuda-bank-landing-page-clone.netlify.app/)
 
 ### Built with
 
